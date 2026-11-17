@@ -1,1 +1,2 @@
 R001|Deluxe|Available|2500
+1234|big room|Available|12300

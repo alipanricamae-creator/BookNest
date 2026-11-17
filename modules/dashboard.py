@@ -1,6 +1,7 @@
 import os
 from colorama import Fore
 from modules.rooms import room_menu
+from modules.guests import guest_menu
 
 def clear():
     os.system("cls" if os.name == "nt" else "clear")
@@ -27,6 +28,9 @@ def dashboard(user, role):
 
         if choice == "1":
             room_menu()
+
+        elif choice == "2":
+            guest_menu()
 
         elif choice == "6":
             break
