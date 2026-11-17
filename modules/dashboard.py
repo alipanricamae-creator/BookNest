@@ -3,6 +3,7 @@ from colorama import Fore
 from modules.rooms import room_menu
 from modules.guests import guest_menu
 from modules.reservations import reservation_menu
+from modules.reports import report_menu
 
 def clear():
     os.system("cls" if os.name == "nt" else "clear")
@@ -35,6 +36,9 @@ def dashboard(user, role):
 
         elif choice == "3":
             reservation_menu()
+
+        elif choice == "4":
+            report_menu()
 
         elif choice == "6":
             break
