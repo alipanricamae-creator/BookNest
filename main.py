@@ -1,5 +1,6 @@
 from colorama import init, Fore
 from modules.auth import login
+from modules.dashboard import dashboard
 import os
 
 init(autoreset=True)
@@ -31,10 +32,7 @@ def main_menu():
             user, role = login()
 
             if user:
-                print(f"\nLogged in as {user}")
-                print(f"Role: {role}")
-
-            input("\nPress Enter to continue...")
+                dashboard(user, role)
 
         elif choice == "2":
             print("\nThank you for using BookNest!")
