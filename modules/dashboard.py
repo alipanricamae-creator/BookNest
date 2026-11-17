@@ -4,6 +4,7 @@ from modules.rooms import room_menu
 from modules.guests import guest_menu
 from modules.reservations import reservation_menu
 from modules.reports import report_menu
+from modules.search import search_menu
 
 def clear():
     os.system("cls" if os.name == "nt" else "clear")
@@ -23,8 +24,9 @@ def dashboard(user, role):
         print("[2] Guest Management")
         print("[3] Reservation Management")
         print("[4] Reports")
-        print("[5] Settings")
-        print("[6] Logout")
+        print("[5] Search")
+        print("[6] Settings")
+        print("[7] Logout")
 
         choice = input("\nSelect option: ")
 
@@ -40,7 +42,10 @@ def dashboard(user, role):
         elif choice == "4":
             report_menu()
 
-        elif choice == "6":
+        elif choice == "5":
+            search_menu()
+
+        elif choice == "7":
             break
 
         else:
