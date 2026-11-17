@@ -1,5 +1,6 @@
 import os
 from colorama import Fore
+from modules.rooms import room_menu
 
 def clear():
     os.system("cls" if os.name == "nt" else "clear")
@@ -24,7 +25,11 @@ def dashboard(user, role):
 
         choice = input("\nSelect option: ")
 
-        if choice == "6":
+        if choice == "1":
+            room_menu()
+
+        elif choice == "6":
             break
+
         else:
             input("\nFeature coming soon. Press Enter...")
