@@ -5,6 +5,7 @@ from modules.guests import guest_menu
 from modules.reservations import reservation_menu
 from modules.reports import report_menu
 from modules.search import search_menu
+from modules.settings import settings_menu
 
 def clear():
     os.system("cls" if os.name == "nt" else "clear")
@@ -45,8 +46,11 @@ def dashboard(user, role):
         elif choice == "5":
             search_menu()
 
+        elif choice == "6":
+            settings_menu()
+
         elif choice == "7":
             break
 
         else:
-            input("\nFeature coming soon. Press Enter...")
+            input("\nInvalid option! Press Enter...")
