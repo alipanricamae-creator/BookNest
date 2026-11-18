@@ -6,3 +6,9 @@ R001|Deluxe|Available|2500
 66|12|Available|1000
 112233|Deluxe|Available|1900
 R001|Deluxe|Available|2500
+R001|Deluxe|Available|2500
+R001|Deluxe|Available|2500
+R001|Deluxe|Available|2500
+R001|Deluxe|Available|2500
+R001|Deluxe|Available|2500
+R001|Deluxe|Available|2500
