@@ -1,5 +1,3 @@
-
-
 def login():
     username = input("Username: ")
     password = input("Password: ")
@@ -18,3 +16,4 @@ def login():
 
     print("\nInvalid username or password!")
     return None, None
+
