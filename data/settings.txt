@@ -1,0 +1,33 @@
+def settings_menu():
+    while True:
+        print("\n===== SETTINGS =====")
+        print("[1] Change Theme")
+        print("[2] Change Password")
+        print("[3] Back")
+
+        choice = input("\nSelect option: ")
+
+        if choice == "1":
+            print("\nAvailable Themes:")
+            print("1. Blue")
+            print("2. Green")
+            print("3. Default")
+
+            theme = input("Choose Theme: ")
+
+            with open("data/settings.txt", "w") as file:
+                file.write(theme)
+
+            print("Theme saved!")
+
+        elif choice == "2":
+            username = input("Username: ")
+            new_password = input("New Password: ")
+
+            print("\nPassword change feature saved for future update.")
+
+        elif choice == "3":
+            break
+
+        else:
+            print("\nInvalid option!")
