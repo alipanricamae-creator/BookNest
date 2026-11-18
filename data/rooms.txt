@@ -1,2 +1,5 @@
 R001|Deluxe|Available|2500
 1234|big room|Available|12300
+202500523|43|Available|1900
+202500523|123|Available|1900
+12345|20|Available|12000

@@ -8,8 +8,65 @@ def search_menu():
 
         choice = input("\nSelect option: ")
 
-        if choice == "4":
+        if choice == "1":
+            keyword = input("Enter Room ID: ")
+
+            try:
+                found = False
+
+                with open("data/rooms.txt", "r") as file:
+                    for line in file:
+                        if keyword in line:
+                            print("\nFound:")
+                            print(line)
+                            found = True
+
+                if not found:
+                    print("Room not found!")
+
+            except FileNotFoundError:
+                print("No room records found!")
+
+        elif choice == "2":
+            keyword = input("Enter Guest ID: ")
+
+            try:
+                found = False
+
+                with open("data/guests.txt", "r") as file:
+                    for line in file:
+                        if keyword in line:
+                            print("\nFound:")
+                            print(line)
+                            found = True
+
+                if not found:
+                    print("Guest not found!")
+
+            except FileNotFoundError:
+                print("No guest records found!")
+
+        elif choice == "3":
+            keyword = input("Enter Reservation ID: ")
+
+            try:
+                found = False
+
+                with open("data/reservations.txt", "r") as file:
+                    for line in file:
+                        if keyword in line:
+                            print("\nFound:")
+                            print(line)
+                            found = True
+
+                if not found:
+                    print("Reservation not found!")
+
+            except FileNotFoundError:
+                print("No reservation records found!")
+
+        elif choice == "4":
             break
 
         else:
-            print("\nSearch feature coming soon...")
+            print("Invalid option!")
