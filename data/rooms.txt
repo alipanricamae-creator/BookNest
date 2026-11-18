@@ -12,3 +12,4 @@ R001|Deluxe|Available|2500
 R001|Deluxe|Available|2500
 R001|Deluxe|Available|2500
 R001|Deluxe|Available|2500
+R001|Deluxe|Available|2500
